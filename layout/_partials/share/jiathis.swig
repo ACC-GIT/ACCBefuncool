@@ -9,7 +9,7 @@
   <a class="jiathis_button_qzone"></a>
   <a class="jiathis_button_kaixin001"></a>
   <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank" rel="external nofollow"></a>
   <a class="jiathis_counter_style"></a>
 </div>
 <script type="text/javascript" >

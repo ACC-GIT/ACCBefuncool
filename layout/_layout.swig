@@ -7,8 +7,10 @@
 
 <html class="{{ html_class | lower }}">
 <head>
-  {% include '_partials/head.swig' %}
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>{% block title %}{% endblock %}</title>
+  {% include '_partials/head.swig' %}
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
@@ -72,6 +74,5 @@
   {% include '_scripts/third-party/lean-analytics.swig' %}
   {% include '_scripts/baidu-push.swig' %}
   {% include '_components/algolia-search/assets.swig' %}
-
 </body>
 </html>

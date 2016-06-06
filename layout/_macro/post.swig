@@ -185,6 +185,12 @@
 
     <div>
       {% if not is_index %}
+        {% include 'statement.swig' %}
+      {% endif %}
+    </div>
+
+    <div>
+      {% if not is_index %}
         {% include 'wechat-subscriber.swig' %}
       {% endif %}
     </div>
@@ -195,32 +201,29 @@
       {% endif %}
     </div>
 
-
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="menu-item-icon fa fa-tags fa-fw"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
 
-      {% if not is_index and (post.prev or post.next) %}
+      {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            {% if post.next %}
-              <a href="{{ url_for(post.next.path) }}" rel="next" title="{{ post.next.title }}">
-                <i class="fa fa-chevron-left"></i> {{ post.next.title }}
+            {% if post.prev %}
+              <a href="{{ url_for(post.prev.path) }}" rel="next" title="{{ post.prev.title }}">
+                <i class="fa fa-chevron-left"></i> {% if post.prev.title.length > 22 %}{{ post.prev.title.substring(0, 22) }}...{% else %}{{ post.prev.title }}{% endif %}
               </a>
             {% endif %}
           </div>
 
-          <span class="post-nav-divider"></span>
-
           <div class="post-nav-prev post-nav-item">
-            {% if post.prev %}
-              <a href="{{ url_for(post.prev.path) }}" rel="prev" title="{{ post.prev.title }}">
-                {{ post.prev.title }} <i class="fa fa-chevron-right"></i>
+            {% if post.next %}
+              <a href="{{ url_for(post.next.path) }}" rel="prev" title="{{ post.next.title }}">
+                {% if post.next.title.length > 22 %}{{ post.next.title.substring(0, 22) }}...{% else %}{{ post.next.title }}{% endif %} <i class="fa fa-chevron-right"></i>
               </a>
             {% endif %}
           </div>

@@ -3,18 +3,18 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /favicon.ico
+favicon: /images/favicon.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "必富客,科技分享,手机端开发,独立开发者,全栈"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: /atom.xml
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2016
 
 
 
@@ -26,10 +26,10 @@ rss:
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
   archives: /archives
+  categories: /categories
   tags: /tags
+  about: /about
   #commonweal: /404.html
 
 
@@ -56,9 +56,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+# scheme: Muse
+# scheme: Mist
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -119,6 +119,11 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
+social:
+  GitHub: https://github.com/AfirSraftGarrier
+  Weibo: http://weibo.com/u/1940794292
+  ZhiHu: http://www.zhihu.com/people/afirsraftgarrier-29
+  YouKu: http://i.youku.com/569fun
 
 
 # Social Links Icons
@@ -133,12 +138,14 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Zhihu: zhihu
+  Youku: youku
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /images/default_avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -152,7 +159,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 
@@ -173,11 +180,13 @@ sidebar:
 
 
 # Blogrolls
-#links_title: Links
-#links_layout: block
+links_title: 友情链接
+links_layout: block
 #links_layout: inline
 #links:
   #Title: http://example.com/
+links:
+  #壳合集: http://www.keheji.com
 
 
 # ---------------------------------------------------------------
@@ -198,7 +207,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # Automatically scroll page to section which is under <!-- more --> mark.
@@ -213,10 +222,17 @@ auto_excerpt:
 
 
 # Wechat Subscriber
-#wechat_subscriber:
-  #enabled: true
-  #qcode: /path/to/your/wechatqcode ex. /uploads/wechat-qcode.jpg
-  #description: ex. subscribe to my blog by scanning my public wechat account
+wechat_subscriber:
+  enabled: true
+  qcode: //i.imgur.com/CFP2Uen.jpg
+  description: 微信扫一扫，获取最新文章推送
+
+reward_comment: 您的支持将很大鼓励我继续创作
+wechatpay: //i.imgur.com/sbiFWU3.png
+alipay: //i.imgur.com/sbiFWU3.png
+
+statement:
+  enabled: true
 
 
 
@@ -236,10 +252,10 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: fddba451177a6cb9f89e88f20b069fd3
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: befuncool
 
 # Disqus
 #disqus_shortname:
@@ -251,22 +267,23 @@ mathjax:
 ##  type: button
 
 # Share
-#jiathis:
+#jiathis: true
 #add_this_id:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: oYQa2txLI9tUS-fCDVQRx7mDvIcixJUVs-_yr7Rnoy4
+baidu_site_verification: wAcdUCCSr1
 
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-78827637-1
 
 # CNZZ count
-#cnzz_siteid:
+cnzz_siteid: 1259447521
 
 
 # Make duoshuo show UA
@@ -274,9 +291,9 @@ mathjax:
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
+  admin_enable: true
+  user_id: 6224780871593887000
+  admin_nickname: 必富客
 
 
 # Facebook SDK Support.
@@ -299,15 +316,15 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: AT89dA9s9ITN3vD2V05trp9y-gzGzoHsz
+  app_key: HOcOkyOb0yKmd7blgLe0JQ0v
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
@@ -327,18 +344,25 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 
 # Algolia Search
 algolia_search:
-  enable: false
+  enable: true
   hits:
     per_page: 10
   labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
+    input_placeholder: 搜索...
+    hits_empty: "未找到匹配结果: ${query}"
+    hits_stats: "找到${hits} 条查询结果，用时 ${time} ms"
+
+algolia:
+  applicationID: 'PHS5ROOF8U'
+  apiKey: '546773ca81f23a4ad00fb1b704c3fbe4'
+  adminApiKey: 'f5ea8a24972c64c5312ab46f8dfa7a36'
+  indexName: 'befuncool'
+  chunkSize: 5000
 
 
 
@@ -364,41 +388,36 @@ vendors:
   _internal: vendors
 
   # Internal version: 2.1.3
-  jquery:
+  jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
 
   # Internal version: 2.1.5
-  # http://fancyapps.com/fancybox/
-  fancybox:
-  fancybox_css:
+  # Fancybox: http://fancyapps.com/fancybox/
+  fancybox: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js
+  fancybox_css: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
-  # https://github.com/ftlabs/fastclick
-  fastclick:
+  fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
 
   # Internal version: 1.9.7
-  # https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: //cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
-  # http://VelocityJS.org
-  velocity:
+  velocity: //cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js
 
   # Internal version: 1.2.1
-  # http://VelocityJS.org
-  velocity_ui:
+  velocity_ui: //cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js
 
   # Internal version: 0.7.9
-  # https://faisalman.github.io/ua-parser-js/
-  ua_parser:
+  ua_parser: //cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js
 
-  # Internal version: 4.6.2
+  # Internal version: 4.4.0
   # http://fontawesome.io/
-  fontawesome:
+  fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com
-  algolia_instant_js:
-  algolia_instant_css:
+  algolia_instant_js: //cdn.bootcss.com/instantsearch.js/1.5.1/instantsearch.min.js
+  algolia_instant_css: //cdn.bootcss.com/instantsearch.js/1.5.1/instantsearch.min.css
 
 
 
@@ -409,3 +428,7 @@ images: images
 
 # Theme version
 version: 5.1.0
+
+#duoshuo_hotartical: true
+
+canonical: true
