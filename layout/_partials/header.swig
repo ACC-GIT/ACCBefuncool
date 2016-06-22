@@ -2,12 +2,10 @@
   {% if theme.custom_logo.image and theme.scheme === 'Muse' %}
     <div class="site-meta-headline">
       <a>
-        <img class="custom-logo-image" src="{{ theme.custom_logo.image }}"
-             alt="{{ config.title }}"/>
+        <img class="custom-logo-image" src="{{ theme.custom_logo.image }}" alt="{{ config.title }}"/>
       </a>
     </div>
   {% endif %}
-
   <div class="custom-logo-site-title">
     <a href="{{ config.root }}"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
@@ -17,7 +15,6 @@
   </div>
   <p class="site-subtitle">{{ config.subtitle }}</p>
 </div>
-
 <div class="site-nav-toggle">
   <button>
     <span class="btn-bar"></span>
@@ -25,10 +22,8 @@
     <span class="btn-bar"></span>
   </button>
 </div>
-
 <nav class="site-nav">
   {% set hasSearch = theme.swiftype_key || theme.algolia_search.enable || theme.tinysou_Key || config.search %}
-
   {% if theme.menu %}
     <ul id="menu" class="menu">
       {% for name, path in theme.menu %}
@@ -59,7 +54,6 @@
       {% endif %}
     </ul>
   {% endif %}
-
   {% if hasSearch %}
     <div class="site-search">
       {% include 'search.swig' %}

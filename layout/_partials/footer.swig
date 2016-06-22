@@ -8,8 +8,8 @@
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
 </div>
 
-<div class="theme-info">
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow" target="_blank">HEXO-NEXT</a>
+<div class="copyright">
+  <span>HEXO-NEXT | 粤ICP备14100221号-5</span>
 </div>
 
 <div class="busuanzi-count">
