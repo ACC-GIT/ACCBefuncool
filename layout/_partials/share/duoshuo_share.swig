@@ -16,12 +16,3 @@
     </div>
   </div>
 </div>
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:700px;height:90px"
-     data-ad-client="ca-pub-3246877209957943"
-     data-ad-slot="9142951118"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
