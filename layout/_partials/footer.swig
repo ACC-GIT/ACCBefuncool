@@ -9,7 +9,7 @@
 </div>
 
 <div class="copyright">
-  <span>HEXO-NEXT | 粤ICP备14100221号-5</span>
+  <span>HEXO-NEXT | 粤ICP备14100221号</span>
 </div>
 
 <div class="copyright">

@@ -222,14 +222,14 @@ auto_excerpt:
 
 
 # Wechat Subscriber
-wechat_subscriber:
-  enabled: true
-  qcode: //i.imgur.com/CFP2Uen.jpg
-  description: 微信扫一扫，获取最新文章推送
+#wechat_subscriber:
+  #enabled: true
+  #qcode: //i.imgur.com/CFP2Uen.jpg
+  #description: 微信扫一扫，获取最新文章推送
 
 reward_comment: 您的支持将很大鼓励我继续创作
-wechatpay: //i.imgur.com/sbiFWU3.png
-alipay: //i.imgur.com/sbiFWU3.png
+#wechatpay: //i.imgur.com/sbiFWU3.png
+#alipay: //i.imgur.com/sbiFWU3.png
 
 statement:
   enabled: true
