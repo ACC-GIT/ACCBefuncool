@@ -3,7 +3,9 @@
     {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
       {% if page.path == 'about/index.html' %}
       {% set data_thread_key = 'befuncool/about/index.html' %}
-      {% endif %}
+      {% elseif page.path == 'one/index.html' %}
+            {% set data_thread_key = 'befuncool/one/index.html' %}
+       {% endif %}
       <div class="ds-thread" data-thread-key="{{ data_thread_key || page.path }}"
            data-title="{{ page.title }}" data-url="{{ page.permalink }}">
       </div>
