@@ -2,7 +2,3 @@
 	path = source
 	url = https://github.com/ACC-GIT/ACCBefuncool.git
 	branch = data
-[submodule "themes/hexo-theme-acc"]
-	path = themes/hexo-theme-acc
-	url = git@github.com:ACC-GIT/ACCBefuncool.git
-	branch = master
