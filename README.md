@@ -1,6 +1,6 @@
-# 这是另外一个NexT，叫ACC-NEXT
+# ACC-NEXT
 
-# NexT
+> NexT
 
 > 精于心，简于形
 

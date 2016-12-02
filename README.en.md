@@ -1,5 +1,6 @@
-# This is a variation of NexT name ACC-NEXT
-# NexT
+# ACC-NEXT
+
+> NexT
 
 > NexT is a high quality elegant [Hexo](http://hexo.io) theme. It is crafted from scratch, with love.
 
