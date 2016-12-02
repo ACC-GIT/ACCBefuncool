@@ -1,8 +1,0 @@
-[submodule "hexo-theme-acc"]
-	path = themes/hexo-theme-acc
-	url = git@github.com:ACC-GIT/ACCBefuncool.git
-	branch = master
-[submodule "source"]
-	path = source
-	url = git@github.com:ACC-GIT/ACCBefuncool.git
-	branch = data

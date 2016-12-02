@@ -1,2 +1,1 @@
-# AfirSraftGarrier.github.io
-AfirSraftGarrier's github blog.
+# Focus on focusing on nothing.
