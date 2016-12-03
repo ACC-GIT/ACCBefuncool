@@ -1,1 +1,3 @@
-# Focus on focusing on nothing.
+# QUOTE
+
+* Focus on focusing on nothing.
