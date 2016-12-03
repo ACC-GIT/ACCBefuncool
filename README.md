@@ -1,7 +1,15 @@
 # ACC-NEXT
 
-> NexT
+> Focus on focusing on nothing.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+# QUOTE
+
+* KISS
+=======
+=======
+>>>>>>> 9f6712f6636131c3cd81416592e5d1c6f2dac124
 > 精于心，简于形。
 
 <a href="http://notes.iissnan.com" target="_blank">在线预览 Preview</a> | <a href="http://theme-next.iissnan.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
@@ -42,3 +50,4 @@ NexT is built for easily use with elegant appearance. First things first, always
 [jquery-url]: http://jquery.com/
 [velocity-image]: https://img.shields.io/badge/Velocity-1.2-2BAF2B.svg?style=flat-square
 [velocity-url]: http://julian.com/research/velocity/
+>>>>>>> 9f6712f6636131c3cd81416592e5d1c6f2dac124
