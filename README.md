@@ -2,7 +2,7 @@
 
 > NexT
 
-> 精于心，简于形
+> 精于心，简于形。
 
 <a href="http://notes.iissnan.com" target="_blank">在线预览 Preview</a> | <a href="http://theme-next.iissnan.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
 
@@ -18,8 +18,7 @@
 
 ## 贡献 Contributing
 
-接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的`Pull Request`。
-
+接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的`Pull Request`...
 Any types of contribution are welcome. Thanks.
 
 ## 开发 Development
