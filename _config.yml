@@ -71,13 +71,13 @@ theme: hexo-theme-acc
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://$git_user_name:$git_password@git.coding.net/AfirSraftGarrier/befuncool.git
+  repo: https://GIT_USER_NAME:GIT_PASSWORD@git.coding.net/AfirSraftGarrier/befuncool.git
   branch: coding-pages
 
 algolia:
   applicationID: 'PHS5ROOF8U'
-  apiKey: $algolia_api_key
-  adminApiKey: $algolia_admin_api_key
+  apiKey: ALGOLIA_API_KEY
+  adminApiKey: ALGOLIA_ADMIN_API_KEY
   indexName: 'befuncool'
   chunkSize: 5000
 
