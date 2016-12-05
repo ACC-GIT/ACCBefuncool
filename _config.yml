@@ -71,7 +71,7 @@ theme: hexo-theme-acc
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://git.coding.net/AfirSraftGarrier/befuncool.git
+  repo: https://$git_user_name:$git_password@git.coding.net/AfirSraftGarrier/befuncool.git
   branch: coding-pages
 
 algolia:
