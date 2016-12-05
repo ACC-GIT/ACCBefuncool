@@ -21,8 +21,8 @@ install:
   - npm install
 
 before_script:
-#  - git config --global user.name 'AfirSraftGarrier'
-#  - git config --global user.email 'AfirSraftGarrier@gmail.com'
+  - git config --global user.name 'AfirSraftGarrier'
+  - git config --global user.email 'AfirSraftGarrier@gmail.com'
 
 script:
   - hexo generate
