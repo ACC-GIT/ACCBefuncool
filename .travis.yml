@@ -8,6 +8,7 @@ cache:
 
 before_install:
 
+
 install:
   - git submodule update --init --recursive --remote
   - npm install -g hexo-cli
