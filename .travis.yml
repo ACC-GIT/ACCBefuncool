@@ -1,0 +1,24 @@
+language: node_js
+node_js: stable
+
+cache:
+  directories:
+  - ~/.npm
+  - node_modules
+
+before_install:
+
+install:
+  - git submodule update --init --recursive --remote
+  - npm install -g hexo-cli
+  - npm install
+
+before_script:
+  - git config --global user.name 'AfirSraftGarrier'
+  - git config --global user.email 'AfirSraftGarrier@gmail.com'
+
+script:
+  - hexo generate
+
+after_success:
+  - hexo deploy
