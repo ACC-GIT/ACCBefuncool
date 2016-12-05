@@ -360,8 +360,8 @@ algolia_search:
 
 algolia:
   applicationID: 'PHS5ROOF8U'
-  apiKey: $algolia_api_key
-  adminApiKey: $algolia_admin_api_key
+  apiKey: ALGOLIA_API_KEY
+  adminApiKey: ALGOLIA_ADMIN_API_KEY
   indexName: 'befuncool'
   chunkSize: 5000
 
