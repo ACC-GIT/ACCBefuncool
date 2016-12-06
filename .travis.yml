@@ -13,7 +13,7 @@ before_install:
   - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 install:
-  - yum install tree -y
+  - apt-get install tree -y
   - tree
   - rm -rf *
   - tree
