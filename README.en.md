@@ -4,7 +4,6 @@
 
 > NexT is a high quality elegant [Hexo](http://hexo.io) theme. It is crafted from scratch, with love.
 
-
 [Live Preview](http://notes.iissnan.com)
 
 ## Screenshots
