@@ -21,6 +21,8 @@ install:
   - rm -rf *
   - git clone --depth=3 --branch=main https://github.com/ACC-GIT/ACCBefuncool.git ACC-GIT/ACCBefuncool
   - git submodule update --init --recursive --remote
+  - git config --global user.name 'AfirSraftGarrier'
+  - git config --global user.email 'AfirsraftGarrier@gmail.com'
   - git commit -am "Sub module commit for update."
   - git push
 
