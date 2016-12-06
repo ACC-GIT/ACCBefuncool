@@ -5,11 +5,6 @@ git:
   submodules: false
   depth: 3
 
-cache:
-  directories:
-  - ~/.npm
-  - node_modules
-
 before_install:
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
@@ -18,8 +13,11 @@ before_install:
   - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 install:
+  - tree
   - rm -rf *
+  - tree
   - git clone --depth=3 --branch=main git@github.com:ACC-GIT/ACCBefuncool.git
+  - tree
   - git submodule update --init --recursive --remote
   - git config --global user.name 'AfirSraftGarrier'
   - git config --global user.email 'AfirsraftGarrier@gmail.com'
