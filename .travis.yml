@@ -3,6 +3,8 @@ node_js: stable
 
 git:
   submodules: false
+  depth: 3
+  branch: main
 
 cache:
   directories:
