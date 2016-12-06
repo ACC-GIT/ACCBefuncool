@@ -78,7 +78,7 @@ deploy:
 
 algolia:
   applicationID: 'PHS5ROOF8U'
-  apiKey: ALGOLIA_API_KEY
+  apiKey: '546773ca81f23a4ad00fb1b704c3fbe4'
   adminApiKey: ALGOLIA_ADMIN_API_KEY
   indexName: 'befuncool'
   chunkSize: 5000
