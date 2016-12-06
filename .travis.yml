@@ -9,6 +9,10 @@ cache:
   - ~/.npm
   - node_modules
 
+branches:
+  only:
+  - main
+
 before_install:
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
