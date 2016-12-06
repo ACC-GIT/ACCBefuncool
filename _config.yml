@@ -73,7 +73,7 @@ deploy:
 - type: git
   # repo: git@github.com:OTHER-ACC/JUSTTEST.git,master
   # repo: https://github.com/OTHER-ACC/JUSTTEST.git
-  repo: git@git.coding.net/AfirSraftGarrier/TESTPROJECT.git
+  repo: git@git.coding.net:AfirSraftGarrier/TESTPROJECT.git
   # repo: https://GIT_USER_NAME:GIT_PASSWORD@git.coding.net/AfirSraftGarrier/TESTPROJECT.git
   # repo: https://GIT_USER_NAME:GIT_PASSWORD@github.com/OTHER-ACC/JUSTTEST.git
   # branch: master
