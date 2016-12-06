@@ -27,7 +27,7 @@ install:
 
 before_script:
   - git config --global user.name 'AfirSraftGarrier'
-  - git config --global user.email '2421078029@qq.com'
+  - git config --global user.email 'AfirsraftGarrier@gmail.com'
 
 script:
   - hexo generate
