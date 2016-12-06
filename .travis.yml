@@ -1,7 +1,8 @@
 language: node_js
 node_js: stable
 
-git: false
+git:
+  submodules: false
 
 cache:
   directories:
@@ -16,7 +17,8 @@ before_install:
   - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 install:
-  - git clone --depth=50 --branch=main https://github.com/ACC-GIT/ACCBefuncool.git ACC-GIT/ACCBefuncool
+  - git branch -v
+  - git checkout remotes/origin/main
   - git submodule update --init --recursive --remote
   #  - sed -i 's/GIT_USER_NAME/${git_user_name}/' _config.yml
   #  - sed -i'' "s~GIT_USER_NAME~${git_user_name}~" _config.yml
