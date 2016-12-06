@@ -3,9 +3,9 @@ node_js: stable
 
 cache:
   directories:
-  -~/.nvm
   - ~/.npm
   - node_modules
+  -~/.nvm
 
 before_install:
 
