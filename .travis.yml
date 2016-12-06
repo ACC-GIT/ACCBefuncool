@@ -12,10 +12,6 @@ cache:
 branches:
   only:
   - main
-  except:
-    - data
-    - theme
-    - master
 
 before_install:
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
