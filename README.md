@@ -1,5 +1,7 @@
 # ACC-NEXT
 
+[![Build Status](https://travis-ci.org/ACC-GIT/ACCBefuncool.svg?branch=theme)](https://travis-ci.org/ACC-GIT/ACCBefuncool)
+
 ---
 
 > NexT

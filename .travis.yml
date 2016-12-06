@@ -7,7 +7,6 @@ git:
 
 cache:
   directories:
-  - ~/.npm
   - node_modules
 
 before_install:
