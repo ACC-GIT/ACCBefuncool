@@ -1,9 +1,0 @@
-# hexo robots.txt
-User-agent: *
-Allow: /
-Allow: /archives/
-
-Disallow: /vendors/
-
-Sitemap: http://www.befuncool.com/sitemap.xml
-Sitemap: http://www.befuncool.com/baidusitemap.xml
