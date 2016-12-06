@@ -2,11 +2,16 @@ language: node_js
 node_js: stable
 
 before_install:
+  - echo "success"
 
 install:
+  - echo "success"
 
 before_script:
+  - echo "success"
 
 script:
+  - echo "success"
 
 after_success:
+  - echo "success"
