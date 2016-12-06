@@ -318,8 +318,8 @@ facebook_comments_plugin:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: $leancloud_app_id
-  app_key: $leancloud_app_key
+  app_id: AT89dA9s9ITN3vD2V05trp9y-gzGzoHsz
+  app_key: HOcOkyOb0yKmd7blgLe0JQ0v
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -360,7 +360,7 @@ algolia_search:
 
 algolia:
   applicationID: 'PHS5ROOF8U'
-  apiKey: ALGOLIA_API_KEY
+  apiKey: '546773ca81f23a4ad00fb1b704c3fbe4'
   adminApiKey: ALGOLIA_ADMIN_API_KEY
   indexName: 'befuncool'
   chunkSize: 5000
