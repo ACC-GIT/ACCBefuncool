@@ -71,11 +71,12 @@ theme: hexo-theme-acc
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: https://github.com/OTHER-ACC/JUSTTEST.git
+  repo: git@github.com:OTHER-ACC/JUSTTEST.git,master
+  # repo: https://github.com/OTHER-ACC/JUSTTEST.git
   # repo: https://git.coding.net/AfirSraftGarrier/TESTPROJECT.git
   # repo: https://GIT_USER_NAME:GIT_PASSWORD@git.coding.net/AfirSraftGarrier/TESTPROJECT.git
   # repo: https://GIT_USER_NAME:GIT_PASSWORD@github.com/OTHER-ACC/JUSTTEST.git
-  branch: master
+  # branch: master
   #  branch: coding-pages
 
 algolia:
