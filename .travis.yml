@@ -5,6 +5,11 @@ git:
   submodules: false
   depth: 3
 
+cache:
+  directories:
+  - ~/.npm
+  - node_modules
+
 before_install:
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
@@ -20,9 +25,3 @@ install:
   - git config --global user.email 'AfirsraftGarrier@gmail.com'
   - git commit -am "Sub module commit for update."
   - git push
-
-before_script:
-
-script:
-
-after_success:
