@@ -7,9 +7,9 @@ cache:
   - node_modules
 
 before_install:
-  - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
+  - echo $ssh_private_key | base64 --d > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
-  - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
+  - echo $ssh_public_key | base64 --d > ~/.ssh/id_rsa.pub
   - chmod 0644 ~/.ssh/id_rsa.pub
 
 install:
