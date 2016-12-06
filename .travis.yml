@@ -5,7 +5,6 @@ cache:
   directories:
   - ~/.npm
   - node_modules
-  - ~/.nvm
 
 before_install:
 
