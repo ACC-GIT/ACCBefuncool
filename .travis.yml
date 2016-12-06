@@ -13,12 +13,11 @@ before_install:
   - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 install:
-  - apt-get install tree -y
-  - tree
+  - ls -al
   - rm -rf *
-  - tree
+  - ls -al
   - git clone --depth=3 --branch=main git@github.com:ACC-GIT/ACCBefuncool.git
-  - tree
+  - ls -al
   - git submodule update --init --recursive --remote
   - git config --global user.name 'AfirSraftGarrier'
   - git config --global user.email 'AfirsraftGarrier@gmail.com'
