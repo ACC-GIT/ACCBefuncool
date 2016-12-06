@@ -5,27 +5,27 @@ git:
   submodules: false
   depth: 3
 
-branches:
-  only:
-  - data
-  - main
-
 cache:
   directories:
   - ~/.npm
   - node_modules
 
 before_install:
-  - echo "success"
+  - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
+  - chmod 0600 ~/.ssh/id_rsa
+  - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
+  - chmod 0644 ~/.ssh/id_rsa.pub
+  - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
 install:
-  - echo "success"
+  - rm -rf *
+  - git clone --depth=3 --branch=main https://github.com/ACC-GIT/ACCBefuncool.git ACC-GIT/ACCBefuncool
+  - git submodule update --init --recursive --remote
+  - git commit -am "Sub module commit for update."
+  - git push
 
 before_script:
-  - echo "success"
 
 script:
-  - echo "success"
 
 after_success:
-  - echo "success"
