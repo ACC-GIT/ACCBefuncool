@@ -4,7 +4,10 @@ node_js: stable
 git:
   submodules: false
   depth: 3
-  branch: main
+
+branches:
+  only:
+  - main
 
 cache:
   directories:
@@ -12,31 +15,16 @@ cache:
   - node_modules
 
 before_install:
-  - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
-  - chmod 0600 ~/.ssh/id_rsa
-  - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
-  - chmod 0644 ~/.ssh/id_rsa.pub
-  - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+  - echo "success"
 
 install:
-  - git branch -v
-  - git checkout remotes/origin/main
-  - git submodule update --init --recursive --remote
-  #
-  #  - sed -i 's/GIT_USER_NAME/${git_user_name}/' _config.yml
-  #  - sed -i'' "s~GIT_USER_NAME~${git_user_name}~" _config.yml
-  #  - sed -i'' "s~GIT_PASSWORD~${git_password}~" _config.yml
-  - sed -i'' "s~ALGOLIA_ADMIN_API_KEY~${algolia_admin_api_key}~" _config.yml
-  - sed -i'' "s~ALGOLIA_ADMIN_API_KEY~${algolia_admin_api_key}~" themes/hexo-theme-acc/_config.yml
-  - npm install -g hexo-cli
-  - npm install
+  - echo "success"
 
 before_script:
-  - git config --global user.name 'AfirSraftGarrier'
-  - git config --global user.email 'AfirsraftGarrier@gmail.com'
+  - echo "success"
 
 script:
-  - hexo generate
+  - echo "success"
 
 after_success:
-  - hexo deploy
+  - echo "success"
