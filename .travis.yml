@@ -19,7 +19,7 @@ before_install:
 
 install:
   - rm -rf *
-  - git clone --depth=3 --branch=main https://github.com/ACC-GIT/ACCBefuncool.git ACC-GIT/ACCBefuncool
+  - git clone --depth=3 --branch=main git@github.com:ACC-GIT/ACCBefuncool.git
   - git submodule update --init --recursive --remote
   - git config --global user.name 'AfirSraftGarrier'
   - git config --global user.email 'AfirsraftGarrier@gmail.com'
