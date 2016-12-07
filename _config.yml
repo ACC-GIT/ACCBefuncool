@@ -5,13 +5,14 @@ prose:
     _posts:
       - name: title
         field:
+          element: "text"
           label: "标题"
           value: "这是标题"
       - name: "date"
         field:
-          element: "time"
+          element: "text"
           label: "时间"
-          value: "2014-06-08 10:30:00"
+          value: "2017-08-08 10:30:00"
       - name: "category"
         field:
           element: "multiselect"
