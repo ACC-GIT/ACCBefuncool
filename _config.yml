@@ -10,7 +10,7 @@ prose:
           value: "这是标题"
       - name: "date"
         field:
-          element: 'textarea',
+          element: 'textarea'
           value: 'CURRENT_DATETIME'
           label: "时间"
       - name: "category"
