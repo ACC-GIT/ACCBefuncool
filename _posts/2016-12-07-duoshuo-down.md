@@ -1,6 +1,6 @@
 ---
 date: '2016-12-07 20:30 +0800'
-published: false
+published: true
 title: 多说居然挂了
 category:
   - 多说
