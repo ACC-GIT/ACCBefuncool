@@ -1,11 +1,17 @@
 prose:
   rooturl: '_posts'
   metadata:
-      - name: "date"
+    _posts:
+      - name: "title"
         field:
           element: "text"
-          label: "Date (YYYY-MM-DD HH:MM:SS)"
-          value: now
+          label: "Sections title"
+          placeholder: "This is a title"
+      - name: "date"
+        field:
+          element: "date"
+          label: "时间 (YYYY-MM-DD HH:MM:SS)"
+          value: "2014-06-08 10:30:00"
       - name: "category"
         field:
           element: "select"
@@ -16,4 +22,10 @@ prose:
         field:
           element: "multiselect"
           label: "标签"
+          placeholder: "[标签一,标签二...]"
           alterable: true
+      - name: "published"
+          field:
+            element: "checkbox"
+            label: "是否发布"
+            value: false
