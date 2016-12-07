@@ -2,7 +2,7 @@ language: node_js
 node_js: stable
 
 env:
-    - TRAVIS_TEST=1
+    - TRAVIS_TEST=0
 
 git:
   submodules: false
