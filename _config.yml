@@ -1,5 +1,4 @@
 prose:
-    rooturl: _posts
     metadata:
         _posts:
             - name: "title"
