@@ -10,7 +10,7 @@ cache:
   - node_modules
 
 before_install:
-  - git log -p -1 | grep yml
+  - git log -p -1
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
