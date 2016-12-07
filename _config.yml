@@ -3,7 +3,7 @@ prose:
   siteurl: 'http://www.befuncool.com/'
   metadata:
     _posts:
-      - name: title
+      - name: "title"
         field:
           element: "text"
           label: "标题"
@@ -12,7 +12,7 @@ prose:
         field:
           element: "text"
           label: "时间"
-          value: "2017-08-08 10:30:00"
+          value: 2017-08-08 10:30:00
       - name: "category"
         field:
           element: "multiselect"
