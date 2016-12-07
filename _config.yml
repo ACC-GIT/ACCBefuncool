@@ -10,8 +10,8 @@ prose:
           value: "标题在这里"
       - name: "date"
         field:
-          element: "time"
-          label: "时间 (YYYY-MM-DD HH:MM:SS)"
+          element: "text"
+          label: "时间"
           value: "2014-06-08 10:30:00"
       - name: "category"
         field:
