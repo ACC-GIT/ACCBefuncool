@@ -7,19 +7,17 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Sections title"
-          placeholder: "This is a title"
+          value: "标题在这里"
       - name: "date"
         field:
-          element: "date"
+          element: "time"
           label: "时间 (YYYY-MM-DD HH:MM:SS)"
           value: "2014-06-08 10:30:00"
       - name: "category"
         field:
           element: "select"
           label: "分类"
-          placeholder: "文章名字"
-          alterable: true
+          placeholder: "文章分类"
       - name: "tags"
         field:
           element: "multiselect"
