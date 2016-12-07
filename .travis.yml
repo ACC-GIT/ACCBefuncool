@@ -17,7 +17,7 @@ before_install:
 install:
 
 script:
-  - if [ ! $TRAVIS_TEST ]; then echo '123'; else echo '456'; fi
+  - if [ ! $TRAVIS_TEST ]; then exit 1; else echo '456'; fi
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
