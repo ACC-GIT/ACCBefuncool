@@ -1,7 +1,11 @@
 ---
 date: '2016-12-07 21:12 +0800'
 published: true
-title: how-restore-data-from-drive
+title: 如何解决硬盘“此卷不包含可识别的文件系统.”的问题
+category:
+  - 工具
+tags:
+  - 工具
 ---
 {% cq %} 读扇区错误！ 磁盘: HD1:(466GB) 起始于 416 扇区 共 1 个扇区。 {% endcq %}
 
