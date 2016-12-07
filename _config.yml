@@ -6,7 +6,7 @@ prose:
     _posts:
       - name: "title"
         field:
-          element: "text"
+          element: "title"
           value: "标题"
       - name: "date"
         field:
@@ -17,15 +17,13 @@ prose:
         field:
           element: "select"
           label: "分类"
-          placeholder: "文章分类"
       - name: "tags"
         field:
           element: "multiselect"
           label: "标签"
-          placeholder: "[标签一,标签二...]"
           alterable: true
       - name: "published"
         field:
           element: "checkbox"
-          label: "是否发布"
+          label: "发布"
           value: true
