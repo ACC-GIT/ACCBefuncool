@@ -1,54 +1,41 @@
 prose:
   rooturl: '_posts'
-  siteurl: 'http://prose.github.io/starter/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
-  media: 'media'
+  ignore:
+    - about
+    - categories
+    - common
+    - images
+    - one
+    - tags
+    - .travis.yml
+    - _config.yml
+    - bdunion.txt
+    - CNAME
+    - LICENSE
+    - README.md
+    - robots.txt
   metadata:
     _posts:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "blog"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "blog"
       - name: "title"
         field:
           element: "text"
-          label: "Title"
-          value: ""
-      - name: "splash"
+          label: "标题"
+          placeholder: "文章名字"
+          alterable: true
+      - name: "date"
         field:
           element: "text"
-          label: "Splash image"
-          value: ""
+          label: "Date (YYYY-MM-DD HH:MM:SS)"
+          value: now
+      - name: "category"
+        field:
+          element: "select"
+          label: "分类"
+          placeholder: "文章名字"
+          alterable: true
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
-            - name: "Pears"
-              value: "pears"
-            - name: "Mangos"
-              value: "mangos"
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          value: ""
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
+          label: "标签"
+          placeholder: "[标签一,标签二...]"
+          alterable: true
