@@ -40,3 +40,8 @@ prose:
           element: "checkbox"
           label: "发布"
           value: true
+      - name: "title"
+        field:
+          element: "text"
+          label: "标题"
+          value: "这是标题"
