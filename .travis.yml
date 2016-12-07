@@ -10,21 +10,21 @@ cache:
   - node_modules
 
 before_install:
-  - if [ git log -p -1 | grep 'sdfsfdf.yml' ]; then
-    echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
-    chmod 0600 ~/.ssh/id_rsa
-    echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
-    chmod 0644 ~/.ssh/id_rsa.pub
-    echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+  - if [ git log -p -1 | grep '*.yml' ]; then
+    echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa;
+    chmod 0600 ~/.ssh/id_rsa;
+    echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub;
+    chmod 0644 ~/.ssh/id_rsa.pub;
+    echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config;
     fi
 
 install:
   - if [ git log -p -1 | grep 'sdfsfdf.yml' ]; then
-    git clone --depth=3 --branch=main git@github.com:AfirSraftGarrier/ACCBefuncool.git
-    cd ACCBefuncool
-    git submodule update --init --recursive --remote
-    git config --global user.name 'AfirSraftGarrier'
-    git config --global user.email 'AfirsraftGarrier@gmail.com'
-    git commit -am "Sub module commit for update."
-    git push
+    git clone --depth=3 --branch=main git@github.com:AfirSraftGarrier/ACCBefuncool.git;
+    cd ACCBefuncool;
+    git submodule update --init --recursive --remote;
+    git config --global user.name 'AfirSraftGarrier';
+    git config --global user.email 'AfirsraftGarrier@gmail.com';
+    git commit -am "Sub module commit for update.";
+    git push;
     fi
