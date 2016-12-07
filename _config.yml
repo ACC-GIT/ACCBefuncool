@@ -7,7 +7,6 @@ prose:
         field:
           element: "text"
           label: "标题"
-          placeholder: "输入标题"
           value: "这是标题"
       - name: "date"
         field:
