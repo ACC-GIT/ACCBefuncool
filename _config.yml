@@ -14,7 +14,7 @@ prose:
           element: "text"
           label: "时间"
           value: "2014-06-08 10:30:00"
-          type: date
+          type: number
       - name: "category"
         field:
           element: "select"
@@ -30,7 +30,11 @@ prose:
           element: "multiselect"
           label: "标签"
           placeholder: "标签内容"
-          alterable: true
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
       - name: "published"
         field:
           element: "checkbox"
