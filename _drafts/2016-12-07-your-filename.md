@@ -1,13 +1,11 @@
 ---
 date: '2016-12-07 21:02 +0800'
 published: true
-title: ''
+title: how-code-fourier-transform
 category:
   - 数学
 tags:
   - 算法
   - 数学
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+{% cq %} 如何用代码实现傅里叶变换，这是个有趣的问题。 {% endcq %}
