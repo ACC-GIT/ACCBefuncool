@@ -9,12 +9,12 @@ prose:
           value: "这是标题"
       - name: "date"
         field:
-          element: "text"
+          element: "datetime"
           label: "时间"
           value: "2014-06-08 10:30:00"
       - name: "category"
         field:
-          element: "select"
+          element: "multiselect"
           label: "分类"
           placeholder: "文章分类"
           alterable: true
@@ -39,8 +39,3 @@ prose:
           element: "checkbox"
           label: "发布"
           value: true
-      - name: "title"
-        field:
-          element: "text"
-          label: "标题"
-          value: "这是标题"
