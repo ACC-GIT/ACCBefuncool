@@ -1,5 +1,7 @@
 prose:
+
   rooturl: '_posts'
+
   metadata:
     _posts:
       - name: "title"
@@ -25,7 +27,7 @@ prose:
           placeholder: "[标签一,标签二...]"
           alterable: true
       - name: "published"
-          field:
-            element: "checkbox"
-            label: "是否发布"
-            value: false
+        field:
+          element: "checkbox"
+          label: "是否发布"
+          value: false
