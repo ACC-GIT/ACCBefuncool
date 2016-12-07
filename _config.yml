@@ -7,7 +7,6 @@ prose:
       - name: "title"
         field:
           element: "text"
-          placeholder: "输入标题"
       - name: "date"
         field:
           element: "text"
@@ -19,6 +18,7 @@ prose:
           element: "select"
           label: "分类"
           placeholder: "文章分类"
+          alterable: true
           options:
             - name: "Apples"
               value: "apples"
@@ -29,6 +29,7 @@ prose:
           element: "multiselect"
           label: "标签"
           placeholder: "标签内容"
+          alterable: true
           options:
             - name: "Apples"
               value: "apples"
