@@ -1,9 +1,6 @@
 language: node_js
 node_js: stable
 
-env:
-    - TRAVIS_TEST = 1
-
 git:
   submodules: false
   depth: 3
@@ -17,7 +14,7 @@ before_install:
 install:
 
 script:
-  - if [ ! $TRAVIS_TEST ]; then exit 1; else echo '456'; fi
+  - if [[ `git log -p -1 | grep 'jjjhhjhjhj.yml'` == '' ]] ; then echo '123'; exit 0; else echo '456'; fi
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
