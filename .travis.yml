@@ -21,7 +21,7 @@ before_install:
   - fi
 
 install:
-  - if [git log -p -1 | grep '.yml']
+  - if [ false ]
   - then
   - git clone --depth=3 --branch=main git@github.com:AfirSraftGarrier/ACCBefuncool.git
   - cd ACCBefuncool
