@@ -1,27 +1,6 @@
 prose:
   rooturl: '_posts'
-  ignore:
-    - about
-    - categories
-    - common
-    - images
-    - one
-    - tags
-    - .travis.yml
-    - _config.yml
-    - bdunion.txt
-    - CNAME
-    - LICENSE
-    - README.md
-    - robots.txt
   metadata:
-    _posts:
-      - name: "title"
-        field:
-          element: "text"
-          label: "标题"
-          placeholder: "文章名字"
-          alterable: true
       - name: "date"
         field:
           element: "text"
@@ -37,5 +16,4 @@ prose:
         field:
           element: "multiselect"
           label: "标签"
-          placeholder: "[标签一,标签二...]"
           alterable: true
