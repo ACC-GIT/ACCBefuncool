@@ -10,7 +10,7 @@ cache:
   - node_modules
 
 before_install:
-  - if if test 'a' -eq 'b'
+  - if test 'a' -eq 'b'
   - then
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
