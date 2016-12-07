@@ -24,7 +24,3 @@ before_install:
   - git commit -am "Sub module commit for update."
   - git push
   - exit 0
-
-install:
-
-script:
