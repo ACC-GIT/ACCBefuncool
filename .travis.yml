@@ -14,7 +14,7 @@ before_install:
 install:
 
 script:
-  - if [[ `git log -p -1 | grep 'trav'` == '' ]] ; then echo '123'; exit 0; else echo '456'; fi
+  - if [[ `git log -p -1 | grep 'dfgdfgdfgdfgdfgdfgdfg'` == '' ]] ; then echo '123'; exit 0; else echo '456'; fi
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
