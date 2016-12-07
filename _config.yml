@@ -7,7 +7,7 @@ prose:
       - name: "title"
         field:
           element: "text"
-          value: "标题在这里"
+          value: "标题"
       - name: "date"
         field:
           element: "text"
@@ -28,4 +28,4 @@ prose:
         field:
           element: "checkbox"
           label: "是否发布"
-          value: false
+          value: true
