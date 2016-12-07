@@ -1,48 +1,29 @@
 prose:
-    siteurl: 'http://www.befuncool.com'
+    rooturl: _posts
     metadata:
         _posts:
-            - name: layout
+            - name: "title"
               field:
-                  element: hidden
-                  value: post
-            - name: categories
-              field:
-                  element: hidden
-                  value: blog
-            - name: title
-              field:
-                  element: text
-            - name: date
-              field:
-                  element: hidden
-            - name: excerpt
-              field:
-                  element: text
-                  placeholder: Use 200 characters at most.
-            - name: id
-              field:
-                  element: hidden
-            - name: tags
-              field:
-                  element: hidden
+                element: "text"
+                label: "标题"
+                placeholder: "文章名字"
+                alterable: true
+            - name: "date"
+                field:
+                  element: "text"
+                  label: "Date (YYYY-MM-DD HH:MM:SS)"
+                  value: now
+            - name: "category"
+                field:
+                  element: "select"
+                  label: "分类"
+                  placeholder: "文章名字"
+                  alterable: true
+            - name: "tags"
+                field:
+                  element: "multiselect"
+                  label: "标签"
+                  placeholder: "[标签一,标签二...]"
+                  alterable: true
     ignore:
-        - .gitignore
-        - .htaccess
-        - _config.yml
-        - favicon.ico
-        - feed.atom
-        - Gemfile
-        - Gemfile.lock
-        - identicon.png
-        - README.md
-        - robots.txt
-        - 404.html
-        - index.html
-        - /_layouts
-        - /_includes
-        - /_site
-        - /assets
-        - /css
-        - /js
-        - /links
+        - !_posts
