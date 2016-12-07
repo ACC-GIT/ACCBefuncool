@@ -9,7 +9,7 @@ prose:
           value: "这是标题"
       - name: "date"
         field:
-          element: "datetime"
+          element: "time"
           label: "时间"
           value: "2014-06-08 10:30:00"
       - name: "category"
