@@ -1,15 +1,18 @@
 prose:
+  rooturl: '_posts'
+  siteurl: 'http://www.befuncool.com/'
   metadata:
     _posts:
       - name: "title"
         field:
-          element: "text"
+          element: "title"
+          label: "标题"
+          placeholder: "输入标题"
       - name: "date"
         field:
           element: "text"
           label: "时间"
           value: "2014-06-08 10:30:00"
-          type: number
       - name: "category"
         field:
           element: "select"
