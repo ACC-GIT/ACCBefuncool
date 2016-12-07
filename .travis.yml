@@ -12,7 +12,7 @@ cache:
 before_install:
 
 install:
-  - if [[ `git log -p -1 | grep '*.yml` == '' ]]; then exit 1; fi
+  - if [[ `git log -p -1 | grep '*.yml` == "" ]]; then exit 1; fi
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
