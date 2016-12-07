@@ -10,7 +10,7 @@ cache:
   - node_modules
 
 before_install:
-  - if [git log -p -1 | grep 'sdfsfdsf.yml']
+  - if true
   - then
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
@@ -21,7 +21,7 @@ before_install:
   - fi
 
 install:
-  - if [ false ]
+  - if false
   - then
   - git clone --depth=3 --branch=main git@github.com:AfirSraftGarrier/ACCBefuncool.git
   - cd ACCBefuncool
