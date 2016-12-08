@@ -5,7 +5,7 @@
 
 {% block content %}
 
-  <div id="posts" class="posts-expand">
+  <div id="posts" class="posts-none">
     {# tagcloud page support #}
     {% if page.type === "tags" %}
       <div class="tag-cloud">
