@@ -1,7 +1,7 @@
 ---
-date: '2016-12-07 21:02 +0800'
+date: '2016-12-08 08:42 +0800'
 published: true
-title: how-code-fourier-transform
+title: 怎么用代码实现傅里叶变换
 category:
   - 数学
 tags:
