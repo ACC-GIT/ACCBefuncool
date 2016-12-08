@@ -6,8 +6,7 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "标题"
-          value: "这是标题"
+          value: "标题"
           alterable: true
       - name: "date"
         field:
@@ -175,6 +174,8 @@ prose:
               value: "数学"
             - name: "groovy"
               value: "groovy"
+            - name: "数据结构"
+              value: "数据结构"
       - name: "tags"
         field:
           element: "multiselect"
@@ -752,6 +753,8 @@ prose:
               value: "Android性能优化"
             - name: "插件化"
               value: "插件化"
+            - name: "数据结构"
+              value: "数据结构"
       - name: "published"
         field:
           element: "checkbox"
