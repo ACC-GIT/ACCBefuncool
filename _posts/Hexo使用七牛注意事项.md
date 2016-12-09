@@ -1,6 +1,6 @@
 title: Hexo使用七牛注意事项
 date: 2016-11-28 12:16:40
-tags: [Hexo,七牛，图床]
+tags: [Hexo,七牛,图床]
 category: Hexo
 ---
 
