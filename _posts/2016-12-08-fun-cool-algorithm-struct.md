@@ -1,7 +1,7 @@
 ---
 date: '2016-12-08 08:39 +0800'
 published: true
-title: fun-cool-algorithm-struct
+title: 客说算法和数据结构
 category:
   - 算法
 tags:
