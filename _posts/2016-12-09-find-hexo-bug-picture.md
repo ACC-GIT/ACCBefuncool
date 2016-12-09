@@ -1,7 +1,7 @@
 ---
 date: '2016-12-09 08:19 +0800'
 published: true
-title: find-hexo-bug-picture
+title: 近期解决的关于hexo和七牛的一些问题
 category:
   - 前端
 tags:
