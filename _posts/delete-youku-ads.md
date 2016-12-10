@@ -63,7 +63,6 @@ category: 奇技
         document.getElementById('error').style.display = 'none';
     }
 </script>
-{% endraw  %}
 <div style="text-align: center">
     <iframe src="http://www.haofangyuan.net/youku/videoyk.jsp?token=v&width=620&height=400&auto=no&id=XMzQ5MjAzNjg="
             width="620" height="400" marginheight="0" marginwidth="0" frameborder="0" scrolling="no"
@@ -77,3 +76,4 @@ category: 奇技
             style="color: red;margin-left: 10px;display: none;" id="error">请确定是优酷视频地址然后重试</span>
     </form>
 </div>
+{% endraw  %}
