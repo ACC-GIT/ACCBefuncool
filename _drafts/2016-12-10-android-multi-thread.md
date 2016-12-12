@@ -20,6 +20,15 @@ tags:
 
 ## 有哪些方式实现Android多线程？
 
-## 其他线程与UI线程如何通信？
+## 工作线程与UI线程如何通信？
 
 ## Android多线程要注意什么问题？
+
+* 在工作线程里面不能更新UI。Android里面通过[`ViewRootImpl.checkThread`](http://androidxref.com/7.0.0_r1/xref/frameworks/base/core/java/android/view/ViewRootImpl.java#checkThread)来确保这点。下面为为什么不能这么做的一些原因。
+	* 程序领域的解耦。
+   * 线程同步开销。
+   * 容易出现死锁。
+* 注意降低设置工作线程的优先级，这样减少影响UI线程。
+* 注意线程安全问题，保证数据一致性。
+* 注意使用`synchronized`的方式，能少就少，因为同步会影响性能。
+* 注意避免死锁问题。
