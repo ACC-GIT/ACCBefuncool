@@ -9,13 +9,14 @@ tags:
 ---
 ## ANR是什么？
 
-ANR在Android里指Application not responding。用户可以终止程序，也可以继续等待。
+[ANR](https://developer.android.google.cn/training/articles/perf-anr.html#anr)在Android里指Application not responding。用户可以终止程序，也可以继续等待。
 
 {% fi http://afirsraftgarrier.qiniudn.com/ANR.jpg %}
 
 ## 思考ANR。
 
-我们知道，Android应用程序是以`Message`（消息）驱动的，在应用程序的[`ActivityThread`](http://androidxref.com/7.0.0_r1/xref/frameworks/base/core/java/android/app/ActivityThread.java#6041)（主线程或称UI线程）内部有个`Looper`（循环）对`MessageQueue`（消息队列）进行处理，如果Android监测到应用程序的消息处理没有在规定时间内完成，就会弹出提示框让用户选择。
+我们知道`Application`无非就是四大组件：`Activity`、`Service`、`BroadcastReceiver`、`ContentProvider`。怎么觉察到`not responding`，当然是通过系统服务来监测和处理，主要是运行在系统进程的负责组件的`AMS`(ActivityManagerService)和负责输入的`WMS`(WindowManagerService)，这些系统服务会在与组件交互的过程中进行监测，例如启动各组件的时候，或者是触摸屏幕事件分发的时候，如果没有在规定的时间内完成，就会触发ANR，这个ANR有可能只是后台做了记录，有可能是最终由`AMS`来处理，弹出ANR对话框。
+
 
 ## 什么情况会出现ANR?
 
