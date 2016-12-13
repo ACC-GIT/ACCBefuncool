@@ -20,6 +20,11 @@ tags:
 
 ## 有哪些方式实现Android多线程？
 
+* 最原始的自己实现`Thread`。
+* 实现`HandlerThread`。
+* AsycTask
+* IntentService
+* Loader
 * 使用线程池。可以看[例子分析java.util.concurrent.ExecutorService](/2015/07/15/例子分析java.util.concurrent.ExecutorService/)做进一步了解。
 
 ## 工作线程与UI线程如何通信？
@@ -50,7 +55,7 @@ tags:
  	* 隐式引用，由于非静态内部类会隐式持有其外部类的引用，所以也会有可能产生内存泄漏问题。比如某个AsyncTask如果是作为非静态内部类来使用，如果这个AsyncTask还在运行当中，就算其外部类Activity退出了也不会被回收。
     	* 解决方法是用静态内部类代替。
 * 为了解决工作线程和UI线程生命周期不同步问题，可以使用`Loader`来实现异步加载等操作。
-* 要养成手动安全结束线程的好习惯，而不是要等到线程自行结束后才被回收。
+* 要养成手动安全结束线程的好习惯（如设定退出标志），而不是要等到线程自行结束后才被回收。
 * 使用线程池管理线程，找到最优配置。
 * 使用IntentService的时候，用广播可以用`LocalBroadcastManager`，性能会好一些。也可以用`runOnUiThread`快速回调到UI线程。
 * 可以利用系统提供的`Profile GPU Rendering`工具来协助分析UI线程的渲染情况（里面有一条标示刷新一次界面的阈值线，方便找出各个模块比如动画、布局、输入等的问题）。
