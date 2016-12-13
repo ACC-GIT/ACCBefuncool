@@ -52,6 +52,7 @@ tags:
 * 为了解决工作线程和UI线程生命周期不同步问题，可以使用`Loader`来实现异步加载等操作。
 * 要养成手动安全结束线程的好习惯，而不是要等到线程自行结束后才被回收。
 * 使用线程池管理线程，找到最优配置。
-* 使用IntentService的时候，用广播可以用LocalBroadcastManager，性能会好一些。也可以用runOnUiThread快速回调到UI线程。
+* 使用IntentService的时候，用广播可以用`LocalBroadcastManager`，性能会好一些。也可以用`runOnUiThread`快速回调到UI线程。
+* 可以利用系统提供的`Profile GPU Rendering`工具来协助分析UI线程的渲染情况（里面有一条标示刷新一次界面的阈值线，方便找出各个模块比如动画、布局、输入等的问题）。
    
  
