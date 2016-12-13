@@ -20,7 +20,7 @@ tags:
 
 ## 有哪些方式实现Android多线程？
 
-* 最原始的自己实现`Thread`。
+* 最原始的自己[实现`Thread`](https://github.com/AfirSraftGarrier/ACCDemoAndroid/blob/master/app/src/main/java/afirsraftgarrier/demoandroid/snap/thread/SimpleThreadActivity.java)。
 * 实现`HandlerThread`。
 * AsycTask
 * IntentService
