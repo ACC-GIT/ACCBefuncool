@@ -20,6 +20,8 @@ tags:
 
 ## 有哪些方式实现Android多线程？
 
+* 使用线程池。可以看[例子分析java.util.concurrent.ExecutorService](/2015/07/15/例子分析java.util.concurrent.ExecutorService/)做进一步了解。
+
 ## 工作线程与UI线程如何通信？
 
 ## Android多线程要注意什么问题？
@@ -33,3 +35,20 @@ tags:
 * 注意使用`synchronized`的方式，能少就少，因为同步会影响性能。
 * 注意避免死锁问题。
 * 线程不是越多越好，要注意管理好线程，达到效益最大化。
+	* 为什么不能过多原因如下。
+		* 一个线程至少消耗掉64k内存。
+      * 和UI线程抢CPU资源。
+      * CPU在线程间切换的消耗。
+   * 如何制定线程使用策略。
+		* 比如AsyncTask，所有的AsyncTask使用的是同一个任务队列，默认这个队列是以普通线程方式线性执行的，可以通过接口`AsyncTask.executeOnExecutor`来用线程池。
+      * 对于线程池，要根据自己的情况选用合理的线程池策略，控制好并发数量，既能充分利用系统资源，也不会对UI线程造成太大影响。
+ * 注意`AsycTask`和`cancel`其实并没有真正可以取消任务，要通过`isCancelled`来判断是否已经退出任务。
+ * 注意内存泄漏问题。根据GC规则，Thread属于[GC root](http://stackoverflow.com/questions/6366211/what-are-the-roots)，如果正在运行中是不能被回收的，如果工作线程持有UI线程对象，该对象也不会得到回收。这里面涉及到显式引用和隐式引用的问题。
+ 	* 显示引用，比如将View或者Activity传至工作线程。这样很可能由于工作线程还在使用当中，其里面的引用的Activity退出后并没有得到回收，产生内存泄漏。（传View还有个常见问题是，当在UI线程里面从ViewHierarchy移除该View后，在工作线程里面再操作该View就会出现问题。对于这部分，有个准则就是，尽量不要在工作线程持有View引用）
+    	* 对于需要`context`的，可以传`Application`的`context`。
+    	* 可以用弱引用，这样的引用是可以随时被回收的。
+ 	* 隐式引用，由于非静态内部类会隐式持有其外部类的引用，所以也会有可能产生内存泄漏问题。比如某个AsyncTask如果是作为非静态内部类来使用，如果这个AsyncTask还在运行当中，就算其外部类Activity退出了也不会被回收。
+    	* 解决方法是用静态内部类代替。
+* 
+   
+ 
