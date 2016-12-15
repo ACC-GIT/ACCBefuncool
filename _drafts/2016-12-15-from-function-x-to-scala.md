@@ -8,6 +8,7 @@ tags:
   - 函数式编程
   - scala
 ---
+{% fi http://afirsraftgarrier.qiniudn.com/dream-home.png %}
 ## 函数式编程
 
 ## SCALA
