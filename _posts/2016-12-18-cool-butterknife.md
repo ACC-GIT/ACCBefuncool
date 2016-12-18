@@ -1,12 +1,10 @@
 ---
 date: '2016-12-18 18:04 +0800'
-published: true
 title: 简析Butterknife
 category:
   - 开源
 tags:
   - 开源
-titile: 简析Butterknife
 ---
 {% cq %} Butterknife的作用是绑定，不是注入。 {% endcq %}
 ## Butterknife概念
