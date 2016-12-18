@@ -34,7 +34,7 @@ dependencies {
 ## 原理简述
 可以看看其引入的包就知道大致原理，如前所列，需要一个`annotationProcessor`，这个是在编译器作用的，大致就是对注解进行解析，生成绑定相关代码。而另外一个库显然就是运行时用的，即`ButterKnife.bind`之所在。我们可以一窥编译器生成代码的美貌（在`/build/generated/source/apt/`目录下）：
 
-```
+```java
 // Generated code from Butter Knife. Do not modify!
 package afirsraftgarrier.demoandroid.framework.butterknife;
 
@@ -53,11 +53,11 @@ public class ButterknifeMain_ViewBinding<T extends ButterknifeMain> implements U
   protected T target;
 
   private View view2131755126;
-
+  //限制在UI线程执行
   @UiThread
   public ButterknifeMain_ViewBinding(final T target, View source) {
     this.target = target;
-
+	 //绑定相关代码
     View view;
     view = Utils.findRequiredView(source, R.id.tv_hello, "field 'helloTextView' and method 'change'");
     target.helloTextView = Utils.castView(view, R.id.tv_hello, "field 'helloTextView'", TextView.class);
@@ -71,6 +71,7 @@ public class ButterknifeMain_ViewBinding<T extends ButterknifeMain> implements U
   }
 
   @Override
+  // 限制要先调用父类
   @CallSuper
   public void unbind() {
     T target = this.target;
@@ -85,7 +86,31 @@ public class ButterknifeMain_ViewBinding<T extends ButterknifeMain> implements U
   }
 }
 ```
-可以看到里面其实也没做什么新奇的事情，就是将我们的原来枯燥的绑定相关代码生成。关于绑定，其实也可以在运行期用反射来实现，但是这显然比这样在编译器生成绑定代码的方式要消耗。这样的生成代码的功能是借助了java的`APT`（Annotation Processing Tool），如果我们想实现类似的功能，即编译期间自动根据注释来做相关的事情，其实可以参考下Butterknife库的写法。
+可以看到里面其实也没做什么新奇的事情，就是将我们的原来枯燥的绑定相关代码生成。关于绑定，其实也可以在运行期用反射来实现，但是这显然比这样在编译器生成绑定代码的方式要消耗。这样的生成代码的功能是借助了java的`APT`（Annotation Processing Tool），如果我们想实现类似的功能，即编译期间自动根据注释来做相关的事情，其实可以参考下[Butterknife的写法](https://github.com/JakeWharton/butterknife/blob/master/butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java)，实际上是要自己实现一个`AbstractProcessor`，其中最重要的函数当属`process`了，就在这里生成了以`_ViewBinding`为文件名结尾的java文件：
+```java
+@AutoService(Processor.class)
+public final class ButterKnifeProcessor extends AbstractProcessor {
+...
+@Override public boolean process(Set<? extends TypeElement> elements, RoundEnvironment env) {
+    Map<TypeElement, BindingSet> bindingMap = findAndParseTargets(env);// 解析注解信息。
+
+    for (Map.Entry<TypeElement, BindingSet> entry : bindingMap.entrySet()) {//遍历前面解析到的信息。
+      TypeElement typeElement = entry.getKey();
+      BindingSet binding = entry.getValue();
+
+      JavaFile javaFile = binding.brewJava(sdk);
+      try {
+        javaFile.writeTo(filer);//生成java文件。
+      } catch (IOException e) {
+        error(typeElement, "Unable to write binding for type %s: %s", typeElement, e.getMessage());
+      }
+    }
+
+    return true;
+  }
+...
+}
+```
 
 ## 相关问题
 
