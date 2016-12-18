@@ -8,7 +8,7 @@ tags:
   - 开源
 titile: 简析Butterknife
 ---
-{% cq Butterknife的作用是绑定，不是注入。 %}
+{% cq %} Butterknife的作用是绑定，不是注入。 {% endcq %}
 ## Butterknife概念
 
 基本上有点年纪的开发人员都被`findViewById`烦过，枯燥无味，但还必须得写。Butterknife就是帮我们干这事的。
@@ -36,25 +36,14 @@ dependencies {
 
 ```java
 // Generated code from Butter Knife. Do not modify!
-package afirsraftgarrier.demoandroid.framework.butterknife;
-
-import afirsraftgarrier.demoandroid.R;
-import android.support.annotation.CallSuper;
-import android.support.annotation.UiThread;
-import android.view.View;
-import android.widget.TextView;
-import butterknife.Unbinder;
-import butterknife.internal.DebouncingOnClickListener;
-import butterknife.internal.Utils;
-import java.lang.IllegalStateException;
-import java.lang.Override;
-
+...
 public class ButterknifeMain_ViewBinding<T extends ButterknifeMain> implements Unbinder {
   protected T target;
 
   private View view2131755126;
   //限制在UI线程执行
   @UiThread
+  // 运行时绑定调用的接口
   public ButterknifeMain_ViewBinding(final T target, View source) {
     this.target = target;
 	 //绑定相关代码
@@ -73,6 +62,7 @@ public class ButterknifeMain_ViewBinding<T extends ButterknifeMain> implements U
   @Override
   // 限制要先调用父类
   @CallSuper
+  // 解绑接口
   public void unbind() {
     T target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
@@ -117,4 +107,3 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
 ### 1. Butterknife跟[Dagger](http://www.befuncool.com/2016/12/18/2016-12-18-cool-dagger)的异同
 
 这两者都出自同一个作者。其作者也在官网上也说了：`A butter knife is like a dagger only infinitely less sharp`。实际上是说Butterknife做的事情更专，只是针对`View`，只能用在Android平台上。实际上，其做的事情不是注入之类的，而是做View相关的绑定工作。一句话：`Bind Android views and callbacks to fields and methods`，即绑定View以及设置监听相关事情。
-
