@@ -8,3 +8,11 @@ tags:
   - 开源
 ---
 ## Dagger概念
+
+## 相关问题
+
+### 1. 如何理解AOP和IOC？
+
+{% cq %} 其实在程序设计中，不管是什么架构模式，包括OOP，说白都是为了解耦。 {% endcq %}
+
+AOP完整名称叫Aspect Oriented Programming，中文叫面向切面编程。
