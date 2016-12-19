@@ -5,6 +5,7 @@ category:
   - 开源
 tags:
   - 开源
+published: true
 ---
 {% cq %} Butterknife的作用是绑定，不是注入。 {% endcq %}
 ## Butterknife概念
@@ -105,3 +106,7 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
 ### 1. Butterknife跟[Dagger](http://www.befuncool.com/2016/12/18/2016-12-18-cool-dagger)的异同
 
 这两者都出自同一个作者。其作者也在官网上也说了：`A butter knife is like a dagger only infinitely less sharp`。实际上是说Butterknife做的事情更专，只是针对`View`，只能用在Android平台上。实际上，其做的事情不是注入之类的，而是做View相关的绑定工作。一句话：`Bind Android views and callbacks to fields and methods`，即绑定View以及设置监听相关事情。
+
+### 2. 关于事件监听
+
+系统本身有一些机制可以容易绑定事件监听，比如在XML里面注册`onClick`事件等。
