@@ -90,7 +90,7 @@ baidusitemap:
 
 # 百度主动推送
 baidu_url_submit:
-  count: 20000
+  count: 200
   host: www.befuncool.com
   token: 9LyfglVqpv9YU6Zm
   path: baidu_urls.txt
