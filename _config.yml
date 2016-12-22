@@ -74,6 +74,7 @@ theme: hexo-theme-acc
 deploy:
 - type: git
   repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,coding-pages
+- type: baidu_url_submitter
 
 algolia:
   applicationID: 'PHS5ROOF8U'
@@ -86,3 +87,10 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+# 百度主动推送
+baidu_url_submit:
+  count: 20000
+  host: www.befuncool.com
+  token: 9LyfglVqpv9YU6Zm
+  path: baiduurls.txt
