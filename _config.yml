@@ -93,4 +93,4 @@ baidu_url_submit:
   count: 20000
   host: www.befuncool.com
   token: 9LyfglVqpv9YU6Zm
-  path: baiduurls.txt
+  path: baidu_urls.txt
