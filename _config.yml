@@ -74,6 +74,8 @@ theme: hexo-theme-acc
 deploy:
 - type: git
   repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,coding-pages
+- type: git
+  repo: https://github.com/ACC-GIT/befuncool.git
 - type: baidu_url_submitter
 
 algolia:
