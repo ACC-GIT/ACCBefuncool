@@ -7,7 +7,9 @@ category:
 tags:
   - iOS
 ---
-	都知道Alamofire是一个比较火的iOS网络请求库，用着比较方便，但里面有个坑爹的地方是，文档里并没有对超时(timeout)问题做更进一步描述。
+<img src="http://afirsraftgarrier.qiniudn.com/alamofire.png" class="full-image" />
+
+    都知道Alamofire是一个比较火的iOS网络请求库，用着比较方便，但里面有个坑爹的地方是，文档里并没有对超时(timeout)问题做更进一步描述。
 	Alamofire默认的超时时间是一分钟，要等比较久，如果加上loading效果，这么长时间loading体验不好。解决方法是要修改超时时间。查了些资料，是要进行类似如下设置：
 ```
 let configuration = URLSessionConfiguration.default
