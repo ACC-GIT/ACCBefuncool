@@ -72,10 +72,10 @@ theme: hexo-theme-acc
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-#- type: git
-#  repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,coding-pages
 - type: git
-  repo: git@github.com/ACC-GIT/befuncool.git,master
+  repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,coding-pages
+#- type: git
+#  repo: git@github.com/ACC-GIT/befuncool.git,master
 - type: baidu_url_submitter
 
 algolia:
