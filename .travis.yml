@@ -18,6 +18,7 @@ before_install:
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
   - chmod 0600 ~/.ssh/id_rsa
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
+  - cat ~/.ssh/id_rsa.pub
   - chmod 0644 ~/.ssh/id_rsa.pub
   - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
 
