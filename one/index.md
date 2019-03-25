@@ -19,3 +19,4 @@ type: "one"
 
 ### 知识
 > Java为什么要有值类型(`primitive Type`)？因为效率问题，不用`new`，直接栈。
+> GIT如何命令行REVERT: git reset --hard
