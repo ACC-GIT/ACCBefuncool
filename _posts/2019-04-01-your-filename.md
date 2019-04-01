@@ -1,0 +1,16 @@
+---
+date: '2019-04-01 18:04 +0800'
+published: true
+title: ''
+category:
+  - 每日札记
+---
+{% fi http://ponpimd1c.bkt.clouddn.com/fool.png %}
+
+今日愚人节。天气微雨。
+
+关于戒瘾的步骤。
+
+戒虚荣心。让自己忙。
+
+物理隔离 -> 不看 -> 不说 -> 不想 -> 不玩。
