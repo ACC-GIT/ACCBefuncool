@@ -16,7 +16,7 @@ before_install:
   - echo $ssh_public_key | base64 --decode > ~/.ssh/id_rsa.pub
   - chmod 0644 ~/.ssh/id_rsa.pub
   - echo -e "Host git.coding.net\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-  - git clone --depth=3 --branch=main git@github.com:AfirSraftGarrier/ACCBefuncool.git
+  - git clone --depth=3 --branch=main https://github.com/AfirSraftGarrier/ACCBefuncool
   - cd ACCBefuncool
   - git submodule update --init --recursive --remote
   - git config --global user.name 'AfirSraftGarrier'
