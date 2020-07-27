@@ -74,7 +74,7 @@ theme: hexo-theme-acc
 deploy:
 - type: git
   #repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,master
-  repo: https://gitee.com/music_story/ACCBefuncool.git,master
+  repo: git@gitee.com:music_story/ACCBefuncool.git,master
 #- type: git
 #  repo: git@github.com/ACC-GIT/befuncool.git,master
 - type: baidu_url_submitter
