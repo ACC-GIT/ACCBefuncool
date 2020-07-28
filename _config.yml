@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.befuncool.com
+url: http://www.quku.xyz
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,10 +26,10 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-- README.md
-- common/guitar-build-demo/*.html
-- .travis.yml
-- _config.yml
+  - README.md
+  - common/guitar-build-demo/*.html
+  - .travis.yml
+  - _config.yml
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -72,13 +72,12 @@ theme: hexo-theme-acc
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  #repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,master
-
-  repo: git@gitee.com:music_story/ACCBefuncool.git,master
-#- type: git
-#  repo: git@github.com/ACC-GIT/befuncool.git,master
-- type: baidu_url_submitter
+  - type: git
+    repo: git@git.coding.net:AfirSraftGarrier/befuncool.git,coding-pages
+    #- type: git
+    #  repo: git@github.com/ACC-GIT/befuncool.git,master
+    #  repo: git@gitee.com:music_story/ACCBefuncool.git,master
+  - type: baidu_url_submitter
 
 algolia:
   applicationID: 'PHS5ROOF8U'
@@ -95,6 +94,6 @@ baidusitemap:
 # 百度主动推送
 baidu_url_submit:
   count: 200
-  host: www.befuncool.com
+  host: www.quku.xyz
   token: 9LyfglVqpv9YU6Zm
   path: baidu_urls.txt

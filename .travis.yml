@@ -1,5 +1,5 @@
 language: node_js
-node_js: stable
+node_js: "12.18.3"
 
 git:
   submodules: false
@@ -7,12 +7,12 @@ git:
 
 cache:
   directories:
-  - ~/.npm
-  - node_modules
+    - ~/.npm
+    - node_modules
 
 branches:
   only:
-  - main
+    - main
 
 before_install:
   - echo $ssh_private_key | base64 --decode > ~/.ssh/id_rsa
