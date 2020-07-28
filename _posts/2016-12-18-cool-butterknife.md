@@ -25,7 +25,7 @@ dependencies {
 在需要绑定的地方调用`ButterKnife.bind`，注意这个方法有好几种绑定方式，也即Butterknife的几种作用方式，可以看接口说明了解。这个方法会返回一个`Unbinder`，在需要的时候，可以将之前的绑定撤销。
 
 ## 3. 写绑定注解
-可以在[`AS`](http://www.befuncool.com/2016/11/12/JetBrains快捷键汇总)里面键入`@Bind`，在下拉提示框中查看Butterknife提供的成员变量绑定功能。可以键入`@On`看下拉提示框来了解Butterknife提供的绑定方法功能。
+可以在[`AS`](http://www.quku.xyz/2016/11/12/JetBrains快捷键汇总)里面键入`@Bind`，在下拉提示框中查看Butterknife提供的成员变量绑定功能。可以键入`@On`看下拉提示框来了解Butterknife提供的绑定方法功能。
 
 ## 4. 参考
 可以参考这个[DEMO](https://github.com/AfirSraftGarrier/ACCDemoAndroid/blob/master/app/src/main/java/afirsraftgarrier/demoandroid/framework/butterknife/ButterknifeMain.java)，也可以参考[官方介绍](http://jakewharton.github.io/butterknife/)。
@@ -103,7 +103,7 @@ public final class ButterKnifeProcessor extends AbstractProcessor {
 
 ## 相关问题
 
-### 1. Butterknife跟[Dagger](http://www.befuncool.com/2016/12/18/2016-12-18-cool-dagger)的异同
+### 1. Butterknife跟[Dagger](http://www.quku.xyz/2016/12/18/2016-12-18-cool-dagger)的异同
 
 这两者都出自同一个作者。其作者也在官网上也说了：`A butter knife is like a dagger only infinitely less sharp`。实际上是说Butterknife做的事情更专，只是针对`View`，只能用在Android平台上。实际上，其做的事情不是注入之类的，而是做View相关的绑定工作。一句话：`Bind Android views and callbacks to fields and methods`，即绑定View以及设置监听相关事情。
 

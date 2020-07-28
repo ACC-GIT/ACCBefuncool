@@ -5,5 +5,5 @@ Allow: /archives/
 
 Disallow: /vendors/
 
-Sitemap: http://www.befuncool.com/sitemap.xml
-Sitemap: http://www.befuncool.com/baidusitemap.xml
+Sitemap: http://www.quku.xyz/sitemap.xml
+Sitemap: http://www.quku.xyz/baidusitemap.xml

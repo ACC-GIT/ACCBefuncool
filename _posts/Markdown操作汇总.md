@@ -155,18 +155,18 @@ class SomeClass:
 #### 链接
 形式是 \[链接名称\](链接URL) 如：
 ```
-这是[链接](www.befuncool.com)
+这是[链接](www.quku.xyz)
 ```
 效果是：
-这是[链接](www.befuncool.com)
+这是[链接](www.quku.xyz)
 
 #### 图片
 形式是 \!\[图片名称\](图片URL) 如：
 ```
-这是图片![我的头像](http://www.befuncool.com/images/default_avatar.jpg)
+这是图片![我的头像](http://www.quku.xyz/images/default_avatar.jpg)
 ```
 效果是：
-这是图片![图片名字](http://www.befuncool.com/images/default_avatar.jpg)
+这是图片![图片名字](http://www.quku.xyz/images/default_avatar.jpg)
 
 # 9. 表格
 
