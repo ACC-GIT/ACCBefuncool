@@ -1,6 +1,6 @@
 prose:
   rooturl: '_posts'
-  siteurl: 'http://www.befuncool.xyz/'
+  siteurl: 'http://www.quku.xyz/'
   metadata:
     _posts:
       - name: "title"
