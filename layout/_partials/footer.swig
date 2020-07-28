@@ -9,7 +9,7 @@
 </div>
 
 <div class="copyright">
-  <span>HEXO-NEXT | 粤ICP备14100221号 | <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p></span>
+  <span>HEXO-NEXT | 粤ICP备14100221号</span>
 </div>
 
 <div class="copyright">

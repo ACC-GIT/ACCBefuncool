@@ -258,7 +258,7 @@ mathjax:
 baidu_analytics: fddba451177a6cb9f89e88f20b069fd3
 
 # Duoshuo ShortName
-duoshuo_shortname: befuncool
+#shuo_shortname: befuncool
 
 # Disqus
 #disqus_shortname:
@@ -274,7 +274,7 @@ duoshuo_shortname: befuncool
 #add_this_id:
 
 # Share
-duoshuo_share: true
+#_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
@@ -292,11 +292,11 @@ baidu_site_verification: wAcdUCCSr1
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: true
-  user_id: 6224780871593887000
-  admin_nickname: 必富客
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: true
+#  user_id: 6224780871593887000
+#  admin_nickname: 必富客
 
 
 # Facebook SDK Support.
