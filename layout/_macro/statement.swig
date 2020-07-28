@@ -2,8 +2,15 @@
   <div id="end-share">
         <div id="eof" class="print-invisible">
             <hr class="eof">
+            <div class="word">{{ config.title }}</div>
         </div>
         <style type="text/css">
+           .word {
+              position: relative;
+              text-align: center;
+              top: -25px;
+              width: 100%;
+           }
             hr.eof {
               text-align: center;
               border: 0;
@@ -15,11 +22,11 @@
               margin: 40px 0px 10px 0;
             }
             hr.eof:after {
-              content: '{{ config.title }}';
+              content: '_';
               display: inline-block;
               position: relative;
               top: -13px;
-              padding: 0 10px;
+              padding: 0 25px;
               background: #fff;
               color: #8c8b8b;
             }
