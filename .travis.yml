@@ -25,9 +25,9 @@ install:
   - git submodule update --init --recursive --remote
   - sed -i'' "s~ALGOLIA_ADMIN_API_KEY~${algolia_admin_api_key}~" _config.yml
   - sed -i'' "s~ALGOLIA_ADMIN_API_KEY~${algolia_admin_api_key}~" themes/hexo-theme-acc/_config.yml
-  - npm install -g hexo-cli
+  #- npm install -g hexo-cli
   - npm install
-  - hexo clean
+  #- hexo clean
   - hexo algolia
 
 before_script:
@@ -37,5 +37,8 @@ before_script:
 #script:
 #  - hexo generate
 
-after_success:
+script:
   - hexo deploy
+
+#after_success:
+#  - hexo deploy
