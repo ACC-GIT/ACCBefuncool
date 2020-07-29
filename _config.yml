@@ -77,7 +77,7 @@ deploy:
     #- type: git
     #  repo: git@github.com/ACC-GIT/befuncool.git,master
     #  repo: git@gitee.com:music_story/ACCBefuncool.git,master
-  - type: baidu_url_submitter
+  #- type: baidu_url_submitter
 
 algolia:
   applicationID: 'PHS5ROOF8U'

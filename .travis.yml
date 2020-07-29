@@ -34,8 +34,8 @@ before_script:
   - git config --global user.name 'AfirSraftGarrier'
   - git config --global user.email 'AfirsraftGarrier@gmail.com'
 
-script:
-  - hexo generate
+#script:
+#  - hexo generate
 
 after_success:
   - hexo deploy
